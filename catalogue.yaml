@@ -9,11 +9,12 @@
     ansible.builtin.dnf:
       name: nodejs
       state: present
+
   - name: create roboshop user
     ansible.builtin.user:
       name: roboshop
   
   - name: create a app dir
-    ansible.buitin.file:
+    ansible.builtin.file:
       path: /app
       state: directory
