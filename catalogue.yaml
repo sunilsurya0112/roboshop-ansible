@@ -63,3 +63,9 @@
   - name: load the data into catalogue
     ansible.builtin.command: mongo --host mongodb.sunil-devops.shop < /app/schema/catalogue.js
     when: product_count == "0"
+  
+  - name: enable and start catalogue
+    ansible.builtin.service:
+      name: catalogue
+      state: started
+      enabled: yes
