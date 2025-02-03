@@ -27,4 +27,5 @@
     ansible.builtin.unarchive:
       src: /tmp/catalogue.zip
       dest: /app
+      rempte_src: yes
   
