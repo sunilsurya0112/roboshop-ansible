@@ -41,7 +41,6 @@
   - name: Reload service daemon
     ansible.builtin.systemd_service:
       daemon_reload: true
-      state: reloaded
 
   - name: copy mongodb repo
     ansible.builtin.copy:
