@@ -8,7 +8,7 @@
       state: present
 
   - name: delete html folder
-    anssible.builtin.file:
+    ansible.builtin.file:
       name: /usr/share/nginx/html/
       state: absent   
 
