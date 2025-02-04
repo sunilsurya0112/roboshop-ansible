@@ -3,7 +3,7 @@
   become: yes
   tasks: 
   - name: install nginx
-    anssible.builtin.dnf:
+    ansible.builtin.dnf:
       name: nginx
       state: present
 
